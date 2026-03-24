@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Leeds Garden Services | Lawn Care, Landscaping & Garden Maintenance in Bramhope</title>
+  <meta name="description" content="North Leeds Garden Services — a local, friendly and reliable company specialising in creating and maintaining beautiful gardens across Bramhope, Otley, Harrogate and North Leeds. Free quotes available.">
+  <meta name="keywords" content="garden services Bramhope, lawn care North Leeds, landscaping Leeds, garden maintenance Otley, pressure washing Leeds, garden clearance Bramhope">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://northleedsgardenservices.co.uk/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="North Leeds Garden Services | Bramhope">
+  <meta property="og:description" content="Local, friendly and reliable garden services across North Leeds. Lawn care, landscaping, maintenance contracts and more.">
+  <meta property="og:type" content="website">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "North Leeds Garden Services",
+    "description": "A local, friendly and reliable company specialising in creating and maintaining beautiful gardens across North Leeds.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bramhope",
+      "addressRegion": "West Yorkshire",
+      "addressCountry": "GB"
+    },
+    "areaServed": ["Bramhope", "Otley", "Harrogate", "Horsforth", "Adel", "Cookridge", "Pool-in-Wharfedale"],
+    "serviceType": ["Lawn Care", "Landscaping", "Garden Maintenance", "Pressure Washing", "Garden Clearance"],
+    "priceRange": "££",
+    "telephone": "+447450342427"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green-deep:   #1e3a1a;
+      --green-mid:    #2d5c26;
+      --green-bright: #4a8c3f;
+      --lime:         #8cbf3f;
+      --cream:        #f5f2eb;
+      --cream-dark:   #ede9df;
+      --stone:        #c8b89a;
+      --text:         #1a1a18;
+      --text-light:   #5a5a52;
+      --white:        #ffffff;
+      --radius:       4px;
+      --shadow:       0 4px 32px rgba(30,58,26,0.13);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      color: var(--text);
+      background: var(--cream);
+      overflow-x: hidden;
+    }
+
+    /* ── UTILITY ── */
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      border-radius: var(--radius);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.95rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: 2px solid transparent;
+      letter-spacing: 0.02em;
+    }
+    .btn-primary {
+      background: var(--lime);
+      color: var(--green-deep);
+      border-color: var(--lime);
+    }
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--lime);
+      border-color: var(--lime);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border-color: rgba(255,255,255,0.6);
+    }
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--green-deep);
+      border-color: var(--white);
+    }
+    .btn-dark {
+      background: var(--green-deep);
+      color: var(--white);
+      border-color: var(--green-deep);
+    }
+    .btn-dark:hover {
+      background: var(--green-mid);
+      border-color: var(--green-mid);
+    }
+    .section-label {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--lime);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.2;
+      color: var(--green-deep);
+      margin-bottom: 16px;
+    }
+    .section-body {
+      font-size: 1.05rem;
+      color: var(--text-light);
+      line-height: 1.75;
+      max-width: 580px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 18px 0;
+      transition: all 0.3s ease;
+    }
+    nav.scrolled {
+      background: var(--green-deep);
+      padding: 12px 0;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
+    .nav-logo-main {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--white);
+      line-height: 1.1;
+    }
+    .nav-logo-sub {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--lime);
+      margin-top: 2px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--lime); }
+    .nav-cta { margin-left: 8px; }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--white);
+      transition: all 0.3s;
+      border-radius: 2px;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--green-deep);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: var(--lime); }
+    .mobile-menu .btn { font-size: 1rem; margin-top: 8px; }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(20,46,16,0.88) 0%, rgba(30,58,26,0.72) 50%, rgba(45,92,38,0.55) 100%),
+        url('hero.webp') center/cover no-repeat;
+    }
+    /* Subtle botanical pattern overlay */
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 80% 20%, rgba(140,191,63,0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 10% 80%, rgba(140,191,63,0.06) 0%, transparent 40%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 140px 0 80px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(140,191,63,0.4);
+      border-radius: 100px;
+      padding: 6px 16px 6px 8px;
+      margin-bottom: 28px;
+      backdrop-filter: blur(4px);
+    }
+    .hero-badge-dot {
+      width: 8px; height: 8px;
+      background: var(--lime);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+    .hero-badge span {
+      font-size: 0.8rem;
+      color: var(--lime);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6vw, 4.8rem);
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--lime);
+    }
+    .hero-tagline {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: rgba(255,255,255,0.8);
+      line-height: 1.65;
+      max-width: 540px;
+      margin: 20px 0 36px;
+      font-weight: 300;
+      letter-spacing: 0.01em;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 56px;
+    }
+    .hero-phone {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+    }
+    .hero-phone-icon {
+      width: 38px; height: 38px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+    }
+    .hero-stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--lime);
+      display: block;
+    }
+    .hero-stat-label {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 2px;
+    }
+
+    /* Scroll indicator */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      z-index: 2;
+      animation: bounce 2.5s ease-in-out infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(6px); }
+    }
+    .scroll-line {
+      width: 1px;
+      height: 36px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+    }
+
+    /* ── TRUST BAR ── */
+    #trust {
+      background: var(--green-deep);
+      padding: 20px 0;
+    }
+    .trust-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 40px;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.88rem;
+    }
+    .trust-icon {
+      font-size: 1.1rem;
+    }
+
+    /* ── SERVICES ── */
+    #services {
+      padding: 96px 0;
+      background: var(--cream);
+    }
+    .services-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 24px;
+      margin-bottom: 56px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2px;
+      background: var(--cream-dark);
+      border: 2px solid var(--cream-dark);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .service-card {
+      background: var(--white);
+      padding: 40px 36px;
+      transition: background 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--lime);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+      transform-origin: left;
+    }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-card:hover { background: var(--cream); }
+    .service-emoji {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .service-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      color: var(--green-deep);
+      margin-bottom: 10px;
+    }
+    .service-card p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* ── WHY US ── */
+    #why {
+      padding: 96px 0;
+      background: var(--green-deep);
+      position: relative;
+      overflow: hidden;
+    }
+    #why::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(140,191,63,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .why-text .section-title { color: var(--white); }
+    .why-text .section-body { color: rgba(255,255,255,0.65); }
+    .why-features {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 36px;
+    }
+    .why-feature {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .why-feature-icon {
+      width: 44px; height: 44px;
+      min-width: 44px;
+      background: rgba(140,191,63,0.15);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+    .why-feature h4 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .why-feature p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.6;
+    }
+    .why-image-stack {
+      position: relative;
+      height: 480px;
+    }
+    .why-img {
+      border-radius: 12px;
+      object-fit: cover;
+      position: absolute;
+    }
+    .why-img-main {
+      width: 75%;
+      height: 380px;
+      top: 0; right: 0;
+      box-shadow: var(--shadow);
+    }
+    .why-img-accent {
+      width: 55%;
+      height: 240px;
+      bottom: 0; left: 0;
+      box-shadow: var(--shadow);
+      border: 4px solid var(--green-deep);
+    }
+    .why-badge {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--lime);
+      color: var(--green-deep);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 16px 20px;
+      border-radius: 12px;
+      text-align: center;
+      line-height: 1.2;
+      z-index: 3;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    /* ── GALLERY ── */
+    #gallery {
+      padding: 96px 0;
+      background: var(--cream-dark);
+    }
+    .gallery-header { text-align: center; margin-bottom: 48px; }
+    .gallery-header .section-body { margin: 0 auto; text-align: center; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 260px 260px;
+      gap: 10px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .gallery-item {
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+    }
+    .gallery-item:nth-child(1) {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+    .gallery-item:nth-child(4) {
+      grid-column: 3;
+      grid-row: 1 / 3;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      display: block;
+    }
+    .gallery-item:hover img { transform: scale(1.06); }
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(30,58,26,0.7) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay span {
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+    }
+    .gallery-cta {
+      text-align: center;
+      margin-top: 36px;
+    }
+    .gallery-cta p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    /* ── TESTIMONIALS ── */
+    #testimonials {
+      padding: 96px 0;
+      background: var(--cream);
+    }
+    .testimonials-header { text-align: center; margin-bottom: 56px; }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 36px;
+      box-shadow: var(--shadow);
+      position: relative;
+      border-bottom: 3px solid var(--lime);
+    }
+    .testimonial-stars {
+      color: var(--lime);
+      font-size: 1rem;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+    .testimonial-text {
+      font-size: 0.98rem;
+      color: var(--text-light);
+      line-height: 1.75;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .testimonial-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--green-mid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+    }
+    .testimonial-name {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    .testimonial-location {
+      font-size: 0.82rem;
+      color: var(--text-light);
+    }
+    .testimonials-google {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+    .testimonials-google a {
+      color: var(--green-mid);
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .testimonials-google a:hover { text-decoration: underline; }
+
+    /* ── CONTACT ── */
+    #contact {
+      padding: 96px 0;
+      background: var(--green-deep);
+      position: relative;
+      overflow: hidden;
+    }
+    #contact::after {
+      content: '';
+      position: absolute;
+      bottom: -200px; right: -200px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(140,191,63,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .contact-info .section-title { color: var(--white); }
+    .contact-info .section-body { color: rgba(255,255,255,0.6); margin-bottom: 40px; }
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .contact-detail {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .contact-detail-icon {
+      font-size: 1.2rem;
+      margin-top: 2px;
+    }
+    .contact-detail h4 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--lime);
+      margin-bottom: 4px;
+    }
+    .contact-detail p, .contact-detail a {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+    .contact-detail a:hover { color: var(--lime); }
+    .contact-area-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .area-tag {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.65);
+      font-size: 0.78rem;
+      padding: 4px 12px;
+      border-radius: 100px;
+    }
+
+    /* Form */
+    .contact-form-wrap {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 44px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .form-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--green-deep);
+      margin-bottom: 6px;
+    }
+    .form-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 28px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .form-group label {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text);
+      letter-spacing: 0.02em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid var(--cream-dark);
+      border-radius: var(--radius);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: var(--text);
+      background: var(--cream);
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--green-bright);
+      background: var(--white);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-group select { appearance: none; cursor: pointer; }
+    .form-submit {
+      width: 100%;
+      padding: 16px;
+      background: var(--green-deep);
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.25s;
+      letter-spacing: 0.02em;
+      margin-top: 4px;
+    }
+    .form-submit:hover { background: var(--green-mid); }
+    .form-note {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text-light);
+      margin-top: 12px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #111a0f;
+      padding: 40px 0 24px;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 24px;
+    }
+    .footer-logo .nav-logo-main { font-size: 1.1rem; }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      list-style: none;
+    }
+    .footer-links a {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.87rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--lime); }
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .footer-copy {
+      color: rgba(255,255,255,0.3);
+      font-size: 0.82rem;
+    }
+    .footer-credit {
+      color: rgba(255,255,255,0.3);
+      font-size: 0.82rem;
+    }
+
+    /* ── ANIMATIONS ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .why-grid { grid-template-columns: 1fr; }
+      .why-image-stack { display: none; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .gallery-item:nth-child(1) { grid-column: 1 / 3; }
+      .gallery-item:nth-child(4) { grid-column: auto; grid-row: auto; }
+    }
+    @media (max-width: 700px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .hero-stats { gap: 24px; }
+      .form-row { grid-template-columns: 1fr; }
+      .contact-form-wrap { padding: 28px 22px; }
+      .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; height: auto; }
+      .gallery-item { height: 220px; }
+      .gallery-item:nth-child(1),
+      .gallery-item:nth-child(4) { grid-column: 1; grid-row: auto; }
+    }
+    @media (max-width: 480px) {
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      .hero-stats { flex-direction: column; gap: 16px; }
+      .trust-inner { flex-direction: column; align-items: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVIGATION ══ -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">
+      <span class="nav-logo-main">North Leeds Garden Services</span>
+      <span class="nav-logo-sub">Bramhope &amp; North Leeds</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary nav-cta">Free Quote</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#why" class="mobile-link">About</a>
+  <a href="#gallery" class="mobile-link">Gallery</a>
+  <a href="#testimonials" class="mobile-link">Reviews</a>
+  <a href="#contact" class="btn btn-primary mobile-link">Get a Free Quote</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      <span>Serving Bramhope &amp; North Leeds</span>
+    </div>
+    <h1 class="hero-title">
+      Creating<br><em>Beautiful</em><br>Gardens
+    </h1>
+    <p class="hero-tagline">A local, friendly and reliable company who specialise in creating and maintaining beautiful gardens across North Leeds.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+      <a href="tel:+447450342427" class="btn btn-outline">📞 Call Us Today</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <span class="hero-stat-num">5+</span>
+        <span class="hero-stat-label">Years Experience</span>
+      </div>
+      <div>
+        <span class="hero-stat-num">200+</span>
+        <span class="hero-stat-label">Happy Customers</span>
+      </div>
+      <div>
+        <span class="hero-stat-num">5★</span>
+        <span class="hero-stat-label">Reviews</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══ TRUST BAR ══ -->
+<div id="trust">
+  <div class="container trust-inner">
+    <div class="trust-item"><span class="trust-icon">✓</span> Fully Insured</div>
+    <div class="trust-item"><span class="trust-icon">✓</span> Free No-Obligation Quotes</div>
+    <div class="trust-item"><span class="trust-icon">✓</span> Local &amp; Reliable</div>
+    <div class="trust-item"><span class="trust-icon">✓</span> Quality Guaranteed</div>
+    <div class="trust-item"><span class="trust-icon">✓</span> Friendly, Professional Team</div>
+  </div>
+</div>
+
+<!-- ══ SERVICES ══ -->
+<section id="services">
+  <div class="container">
+    <div class="services-header">
+      <div>
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-body">From a quick lawn tidy to a full garden transformation — we do it all, and we do it properly.</p>
+      </div>
+      <a href="#contact" class="btn btn-dark">Get a Quote →</a>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <span class="service-emoji">🌿</span>
+        <h3>Lawn Care &amp; Mowing</h3>
+        <p>Regular mowing, edging, scarifying, aeration and feeding to keep your lawn looking its very best all year round.</p>
+      </div>
+      <div class="service-card fade-in">
+        <span class="service-emoji">🏡</span>
+        <h3>Landscaping &amp; Design</h3>
+        <p>Full garden transformations including planting schemes, patios, borders, raised beds and bespoke design to suit your lifestyle.</p>
+      </div>
+      <div class="service-card fade-in">
+        <span class="service-emoji">📋</span>
+        <h3>Maintenance Contracts</h3>
+        <p>Tailored weekly or fortnightly maintenance plans so your garden always looks immaculate — without any effort from you.</p>
+      </div>
+      <div class="service-card fade-in">
+        <span class="service-emoji">💧</span>
+        <h3>Pressure Washing</h3>
+        <p>Driveways, patios, decking and paths professionally cleaned and restored to bring back that like-new finish.</p>
+      </div>
+      <div class="service-card fade-in">
+        <span class="service-emoji">🍂</span>
+        <h3>Garden Clearance</h3>
+        <p>Full clearance of overgrown, neglected or end-of-season gardens. We remove, dispose of and leave your space clean and clear.</p>
+      </div>
+      <div class="service-card fade-in" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:var(--cream);">
+        <p style="font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--green-deep); margin-bottom:16px;">Not sure what you need?</p>
+        <a href="#contact" class="btn btn-primary">Ask Us Today</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY US ══ -->
+<section id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-text fade-in">
+        <span class="section-label">Why Choose Us</span>
+        <h2 class="section-title">Gardens cared for like our own</h2>
+        <p class="section-body">We're a small, local team based in Bramhope — which means you get a genuinely personal service, consistent quality, and someone who actually cares about the finished result.</p>
+        <div class="why-features">
+          <div class="why-feature">
+            <div class="why-feature-icon">📍</div>
+            <div>
+              <h4>Local Knowledge</h4>
+              <p>We know the North Leeds area, the soils, the seasons and what thrives here. Local expertise makes a real difference.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">🤝</div>
+            <div>
+              <h4>Honest &amp; Transparent</h4>
+              <p>Free quotes, no hidden charges, no upselling. Just straightforward pricing and great work.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">⭐</div>
+            <div>
+              <h4>Proven Results</h4>
+              <p>Hundreds of satisfied customers across Bramhope, Otley, Harrogate and beyond — check our reviews.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-image-stack fade-in">
+        <img class="why-img why-img-main"
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+          alt="Professionally landscaped garden in North Leeds with manicured lawn and planted borders"
+          loading="lazy" width="600" height="380">
+        <img class="why-img why-img-accent"
+          src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80"
+          alt="Beautiful English garden with colourful planting maintained by North Leeds Garden Services"
+          loading="lazy" width="420" height="240">
+        <div class="why-badge">Over 200<br>happy gardens</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GALLERY ══ -->
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-header">
+      <span class="section-label">Our Work</span>
+      <h2 class="section-title">Recent Projects</h2>
+      <p class="section-body">A selection of gardens we've created and maintained across North Leeds. Every project is different — every result is something we're proud of.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=900&q=80"
+          alt="Landscaped garden with patio and planted borders, North Leeds"
+          loading="lazy" width="900" height="260">
+        <div class="gallery-overlay"><span>Landscaping &amp; Planting — Bramhope</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80"
+          alt="Neat lawn care and border maintenance in North Leeds"
+          loading="lazy" width="600" height="260">
+        <div class="gallery-overlay"><span>Lawn Care — Otley</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=600&q=80"
+          alt="Pressure washed patio looking brand new"
+          loading="lazy" width="600" height="260">
+        <div class="gallery-overlay"><span>Pressure Washing — Horsforth</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1599598425947-5202edd56bdb?w=600&q=80"
+          alt="Garden clearance and tidying service in Leeds"
+          loading="lazy" width="600" height="520">
+        <div class="gallery-overlay"><span>Garden Clearance — Adel</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=600&q=80"
+          alt="Garden maintenance contract keeping garden tidy year round"
+          loading="lazy" width="600" height="260">
+        <div class="gallery-overlay"><span>Maintenance Contract — Pool-in-Wharfedale</span></div>
+      </div>
+    </div>
+    <div class="gallery-cta">
+      <p>Want to see what we could do for your garden?</p>
+      <a href="#contact" class="btn btn-dark">Request a Free Site Visit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testimonials-header fade-in">
+      <span class="section-label">Customer Reviews</span>
+      <h2 class="section-title">What our customers say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Joe did a fantastic job of my hedge and a tree that had grown out of control. He went above and beyond (literally!). Very reasonable price and a nice guy as well. Highly recommended"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">G</div>
+          <div>
+            <div class="testimonial-name">Gavin S.</div>
+            <div class="testimonial-location">Bramhope</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Fantastic service. Gardens already transformed and look forward to using Joe in the coming months. Punctual, polite and hard-working. Joe gave good advice and has good knowledge. Well done!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">Alex B.</div>
+            <div class="testimonial-location">Otley</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Joe did an absolutely fantastic job with our garden. From the initial enquiry, Joe’s communication has been brilliant - he has always got in touch when he says he would and replies promptly. We would definitely recommend Joe and North Leeds Garden Services to anyone looking to give their garden some TLC."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">Maureen A.</div>
+            <div class="testimonial-location">Horsforth</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="testimonials-google">⭐ See all our reviews on <a href="https://www.facebook.com/northleedsgardenservices/reviews?locale=en_GB" target="_blank">Facebook</a></p>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info fade-in">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Get your free quote today</h2>
+        <p class="section-body">Fill in the form and we'll get back to you within 24 hours. No obligation, no hard sell — just honest advice and a fair price.</p>
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span class="contact-detail-icon">📞</span>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+447450342427">07450 342 427</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail-icon">✉️</span>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:northleedsgardenservices@outlook.com">northleedsgardenservices@outlook.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail-icon">📍</span>
+            <div>
+              <h4>Based in</h4>
+              <p>Bramhope, West Yorkshire</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail-icon">🗺️</span>
+            <div>
+              <h4>Areas We Cover</h4>
+              <div class="contact-area-tags">
+                <span class="area-tag">Alwoodley</span>
+                <span class="area-tag">Bramhope</span>
+                <span class="area-tag">Otley</span>
+                <span class="area-tag">Harrogate</span>
+                <span class="area-tag">Horsforth</span>
+                <span class="area-tag">Adel</span>
+                <span class="area-tag">Cookridge</span>
+                <span class="area-tag">Pool-in-Wharfedale</span>
+                <span class="area-tag">Arthington</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap fade-in">
+        <h3 class="form-title">Request a Free Quote</h3>
+        <p class="form-subtitle">We'll get back to you within 24 hours</p>
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p style="display:none"><input name="bot-field"></p>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="07700 900000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Required</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select a service...</option>
+              <option>Lawn Care &amp; Mowing</option>
+              <option>Landscaping &amp; Design</option>
+              <option>Maintenance Contract</option>
+              <option>Pressure Washing</option>
+              <option>Garden Clearance</option>
+              <option>Not sure — need advice</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your garden</label>
+            <textarea id="message" name="message" placeholder="Describe what you're looking for, the size of your garden, or anything else that would help us give you an accurate quote..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send My Free Quote Request →</button>
+          <p class="form-note">🔒 Your details are safe with us and never shared with third parties.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a href="#" class="nav-logo footer-logo">
+        <span class="nav-logo-main">North Leeds Garden Services</span>
+        <span class="nav-logo-sub">Bramhope, West Yorkshire</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© <span id="year"></span> North Leeds Garden Services. All rights reserved. Bramhope, West Yorkshire.</p>
+      <p class="footer-credit">Serving Bramhope, Otley, Harrogate &amp; North Leeds</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── Nav scroll effect ──
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // ── Mobile menu ──
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // ── Scroll fade-in ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // ── Smooth scroll for anchor links ──
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // ── Footer year update ──
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
