@@ -461,12 +461,12 @@
       .hero-stat-num {
         font-family: "Playfair Display", serif;
         font-size: 2rem;
-        color: var(--lime);
+        color: var(--cream);
         display: block;
       }
       .hero-stat-label {
         font-size: 0.82rem;
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--cream-dark);
         text-transform: uppercase;
         letter-spacing: 0.08em;
         margin-top: 2px;
@@ -576,6 +576,9 @@
       }
       .service-card:hover {
         background: var(--cream);
+      }
+      .service-card--cta {
+        grid-column: 2;
       }
       .service-emoji {
         font-size: 2.2rem;
@@ -1153,6 +1156,9 @@
         .scroll-indicator {
           bottom: 2px;
         }
+        .service-card--cta {
+          grid-column: 1;
+        }
         .footer-bottom {
           justify-content: center;
           text-align: center;
@@ -1181,7 +1187,7 @@
       <div class="container nav-inner">
         <a href="#" class="nav-logo">
           <span class="nav-logo-main">North Leeds Garden Services</span>
-          <span class="nav-logo-sub">Bramhope &amp; North Leeds</span>
+          <span class="nav-logo-sub">Based in Bramhope, serving North Leeds</span>
         </a>
         <ul class="nav-links">
           <li><a href="#services">Services</a></li>
@@ -1223,7 +1229,7 @@
             class="hero-logo-img"
           />
           <h1 class="hero-title">
-            Creating<br /><em>Beautiful</em><br />Gardens
+            Creating and Maintaning<br /><em>Beautiful</em><br />Gardens
           </h1>
         </div>
         <p class="hero-tagline">
@@ -1242,8 +1248,8 @@
             <span class="hero-stat-label">Years Experience</span>
           </div>
           <div>
-            <span class="hero-stat-num">200+</span>
-            <span class="hero-stat-label">Happy Customers</span>
+            <span class="hero-stat-num">100's</span>
+            <span class="hero-stat-label">of Happy Customers</span>
           </div>
           <div>
             <span class="hero-stat-num">5★</span>
@@ -1273,7 +1279,7 @@
           <span class="trust-icon">✓</span> Quality Guaranteed
         </div>
         <div class="trust-item">
-          <span class="trust-icon">✓</span> Friendly, Professional Team
+          <span class="trust-icon">✓</span> Friendly &amp; Professional Team
         </div>
       </div>
     </div>
@@ -1286,7 +1292,7 @@
             <span class="section-label">What We Do</span>
             <h2 class="section-title">Our Services</h2>
             <p class="section-body">
-              From a quick lawn tidy to a full garden transformation — we do it
+              From a quick grass cut to a full garden transformation — we do it
               all, and we do it properly.
             </p>
           </div>
@@ -1297,23 +1303,22 @@
             <span class="service-emoji">🌿</span>
             <h3>Lawn Care &amp; Mowing</h3>
             <p>
-              Regular mowing, edging, scarifying, aeration and feeding to keep
-              your lawn looking its very best all year round.
+              Regular lawn mowing services on a weekly or fortnightly basis, to keep your lawn looking it's best all year round.
             </p>
           </div>
           <div class="service-card fade-in">
             <span class="service-emoji">🏡</span>
             <h3>Landscaping &amp; Design</h3>
             <p>
-              Full garden transformations including planting schemes, patios,
-              borders, raised beds and bespoke design to suit your lifestyle.
+              Full garden transformations including turfing, fencing,
+              patios, and planting. With bespoke design to suit your lifestyle.
             </p>
           </div>
           <div class="service-card fade-in">
             <span class="service-emoji">📋</span>
             <h3>Maintenance Contracts</h3>
             <p>
-              Tailored weekly or fortnightly maintenance plans so your garden
+              Tailored weekly, fortnightly or monthly maintenance plans so your garden
               always looks immaculate — without any effort from you.
             </p>
           </div>
@@ -1327,14 +1332,22 @@
           </div>
           <div class="service-card fade-in">
             <span class="service-emoji">🍂</span>
-            <h3>Garden Clearance</h3>
+            <h3>Garden Tidies</h3>
             <p>
-              Full clearance of overgrown, neglected or end-of-season gardens.
-              We remove, dispose of and leave your space clean and clear.
+              Full garden tidies. Dealing with overgrown, neglected or end-of-season gardens, bringing them back to life.
+              We remove and responsibly dispose of all waste.
             </p>
           </div>
+          <div class="service-card fade-in">
+  <span class="service-emoji">🏠</span>
+  <h3>Gutter Cleaning</h3>
+  <p>
+    Blocked gutters cleared and flushed out to prevent leaks and water
+    damage. We leave everything clean, clear and free-flowing.
+  </p>
+</div>
           <div
-            class="service-card fade-in"
+            class="service-card fade-in service-card--cta"
             style="
               display: flex;
               flex-direction: column;
@@ -1378,8 +1391,7 @@
                 <div>
                   <h4>Local Knowledge</h4>
                   <p>
-                    We know the North Leeds area, and
-                    what thrives here. Local expertise makes a real difference.
+                    We know the North Leeds area. Local expertise makes a real difference.
                   </p>
                 </div>
               </div>
@@ -1407,8 +1419,8 @@
           <div class="why-image-stack fade-in">
             <img
               class="why-img why-img-main"
-              src="lawn-mowing.webp"
-              alt="Professionally landscaped garden in North Leeds with manicured lawn and planted borders"
+              src="joe-hedge-cutting.webp"
+              alt="Garden cleared, tidied and hedge professionally cut in North Leeds"
               loading="lazy"
               width="600"
               height="380"
@@ -1420,6 +1432,7 @@
               loading="lazy"
               width="420"
               height="240"
+              style="object-position: top;"
             />
             <div class="why-badge">Over 200<br />happy gardens</div>
           </div>
@@ -1428,150 +1441,213 @@
     </section>
 
     <!-- ══ GALLERY ══ -->
-    <section id="gallery">
-      <div class="container">
-        <div class="gallery-header">
-          <span class="section-label">Our Work</span>
-          <h2 class="section-title">Recent Projects</h2>
-          <p class="section-body">
-            A selection of gardens we've created and maintained across North
-            Leeds. Every project is different — every result is something we're
-            proud of.
-          </p>
-        </div>
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img
-              src="hedge-cutting.webp"
-              alt="Landscaped garden with recently trimmed hedge, North Leeds"
-              loading="lazy"
-              width="900"
-              height="260"
-            />
-            <div class="gallery-overlay">
-              <span>Hedge Cutting — Bramhope</span>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="lawn-care.webp"
-              alt="Neat lawn care and border maintenance in North Leeds"
-              loading="lazy"
-              width="600"
-              height="260"
-            />
-            <div class="gallery-overlay"><span>Lawn Care — Otley</span></div>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="pressure-washing.webp"
-              alt="Pressure washed patio looking brand new"
-              loading="lazy"
-              width="600"
-              height="260"
-            />
-            <div class="gallery-overlay">
-              <span>Pressure Washing — Horsforth</span>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="landscaping-services.webp"
-              alt="Landscaping services - turfing, fencing and gravelling"
-              loading="lazy"
-              width="600"
-              height="520"
-            />
-            <div class="gallery-overlay">
-              <span>Landscaping Services — Adel</span>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="garden-maintenance.webp"
-              alt="Garden maintenance contract keeping garden tidy year round"
-              loading="lazy"
-              width="600"
-              height="260"
-            />
-            <div class="gallery-overlay">
-              <span>Maintenance Contract — Pool-in-Wharfedale</span>
-            </div>
-          </div>
-        </div>
-        <div class="gallery-cta">
-          <p>Want to see what we could do for your garden?</p>
-          <a href="#contact" class="btn btn-dark">Request a Free Site Visit</a>
-        </div>
-      </div>
-    </section>
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-header">
+      <span class="section-label">Our Work</span>
+      <h2 class="section-title">Recent Projects</h2>
+      <p class="section-body">
+        A selection of projects we've created and maintained across North
+        Leeds. Every project is different — every result is something we're
+        proud of.
+      </p>
+    </div>
+    <div class="gallery-grid">
+  <div class="gallery-item">
+    <img
+      src="hedge-cutting.webp"
+      alt="Landscaped garden with recently trimmed hedge, North Leeds"
+      loading="lazy"
+      width="900"
+      height="260"
+    />
+    <div class="gallery-overlay">
+      <span>Hedge Cutting — Bramhope</span>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img
+      src="lawn-care.webp"
+      alt="Neat lawn care and border maintenance in North Leeds"
+      loading="lazy"
+      width="600"
+      height="260"
+    />
+    <div class="gallery-overlay"><span>Lawn Care — Adel</span></div>
+  </div>
+  <div class="gallery-item">
+    <img
+      src="garden-maintenance.webp"
+      alt="Garden maintenance contract keeping garden tidy year round"
+      loading="lazy"
+      width="600"
+      height="260"
+    />
+    <div class="gallery-overlay">
+      <span>Maintenance Contract — Meanwood</span>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img
+      src="landscaping-services.webp"
+      alt="Landscaping services - turfing, fencing and gravelling"
+      loading="lazy"
+      width="600"
+      height="520"
+    />
+    <div class="gallery-overlay">
+      <span>Landscaping Services — Yeadon</span>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img
+      src="pressure-washing.webp"
+      alt="Pressure washed patio looking brand new"
+      loading="lazy"
+      width="600"
+      height="260"
+    />
+    <div class="gallery-overlay">
+      <span>Pressure Washing — Horsforth</span>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img
+      src="lawn-mowing.webp"
+      alt="Overgrown garden cleared and tidied in North Leeds"
+      loading="lazy"
+      width="600"
+      height="260"
+      style="object-position: 50% 40%;"
+    />
+    <div class="gallery-overlay">
+      <span>Lawn Mowing — Cookridge</span>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <img
+      src="new-planting-borders.webp"
+      alt="Landscaping works comprising of new planting borders"
+      loading="lazy"
+      width="600"
+      height="260"
+    />
+    <div class="gallery-overlay">
+      <span>Landscaping & Design — Meanwood</span>
+    </div>
+  </div>
+</div>
+    <div class="gallery-cta">
+      <p>Want to see what we could do for your garden?</p>
+      <a href="#contact" class="btn btn-dark">Request a Free Site Visit</a>
+    </div>
+  </div>
+</section>
 
     <!-- ══ TESTIMONIALS ══ -->
     <section id="testimonials">
-      <div class="container">
-        <div class="testimonials-header fade-in">
-          <span class="section-label">Customer Reviews</span>
-          <h2 class="section-title">What our customers say</h2>
-        </div>
-        <div class="testimonials-grid">
-          <div class="testimonial-card fade-in">
-            <div class="testimonial-stars">★★★★★</div>
-            <p class="testimonial-text">
-              "Joe did a fantastic job of my hedge and a tree that had grown out
-              of control. He went above and beyond (literally!). Very reasonable
-              price and a nice guy as well. Highly recommended"
-            </p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">G</div>
-              <div>
-                <div class="testimonial-name">Gavin S.</div>
-                <div class="testimonial-location">Bramhope</div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card fade-in">
-            <div class="testimonial-stars">★★★★★</div>
-            <p class="testimonial-text">
-              Fantastic service. Gardens already transformed and look forward to
-              using Joe in the coming months. Punctual, polite and hard-working.
-              Joe gave good advice and has good knowledge. Well done!"
-            </p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">A</div>
-              <div>
-                <div class="testimonial-name">Alex B.</div>
-                <div class="testimonial-location">Otley</div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card fade-in">
-            <div class="testimonial-stars">★★★★★</div>
-            <p class="testimonial-text">
-              "Joe did an absolutely fantastic job with our garden. From the
-              initial enquiry, Joe’s communication has been brilliant - he has
-              always got in touch when he says he would and replies promptly. We
-              would definitely recommend Joe and North Leeds Garden Services to
-              anyone looking to give their garden some TLC."
-            </p>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar">M</div>
-              <div>
-                <div class="testimonial-name">Maureen A.</div>
-                <div class="testimonial-location">Horsforth</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="testimonials-google">
-          ⭐ See all our reviews on
-          <a
-            href="https://www.facebook.com/northleedsgardenservices/reviews?locale=en_GB"
-            target="_blank"
-            >Facebook</a
-          >
+  <div class="container">
+    <div class="testimonials-header fade-in">
+      <span class="section-label">Customer Reviews</span>
+      <h2 class="section-title">What our customers say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Joe did a fantastic job of my hedge and a tree that had grown out
+          of control. He went above and beyond (literally!). Very reasonable
+          price and a nice guy as well. Highly recommended."
         </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">G</div>
+          <div>
+            <div class="testimonial-name">Gavin S.</div>
+            <div class="testimonial-location">Adel</div>
+          </div>
+        </div>
       </div>
-    </section>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Fantastic service. Garden already transformed and I look forward to
+          using Joe in the coming months. Punctual, polite and hard-working.
+          Joe gave good advice and has great knowledge. Well done!"
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">Alex B.</div>
+            <div class="testimonial-location">Bramhope</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Joe did an absolutely fantastic job with our garden. His
+          communication has been brilliant throughout — always gets in touch
+          when he says he will and replies promptly. We would definitely
+          recommend Joe and North Leeds Garden Services to anyone."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">Maureen A.</div>
+            <div class="testimonial-location">Alwoodley</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Great work today Joe, very pleased with the results of our lawn tidy up!"
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">R</div>
+          <div>
+            <div class="testimonial-name">Richard W.</div>
+            <div class="testimonial-location">Shadwell</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Joe tidied my garden and kept it looking fresh all this year! Really happy with his work."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Stephanie E.</div>
+            <div class="testimonial-location">Alwoodley</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Joe had some great ideas on how to manage our big garden. He has made it manageable and will be coming back on a regular basis to mow, tidy and carry on clearing where necessary. Very pleased with his work ethic. He is a very nice young man, and his charges are reasonable."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">D</div>
+          <div>
+            <div class="testimonial-name">Dot F.</div>
+            <div class="testimonial-location">Adel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="testimonials-google">
+      ⭐ See all our reviews on
+      
+        <a href="https://www.facebook.com/northleedsgardenservices/reviews?locale=en_GB"
+        target="_blank">Facebook</a
+        
+      >
+    </p>
+  </div>
+</section>
 
     <!-- ══ CONTACT ══ -->
     <section id="contact">
@@ -1581,7 +1657,7 @@
             <span class="section-label">Get in Touch</span>
             <h2 class="section-title">Get your free quote today</h2>
             <p class="section-body">
-              Fill in the form and we'll get back to you within 24 hours. No
+              Fill in the form and we'll get back to you as soon as possible. No
               obligation, no hard sell — just honest advice and a fair price.
             </p>
             <div class="contact-details">
@@ -1623,19 +1699,22 @@
                     <span class="area-tag">Guiseley</span>
                     <span class="area-tag">Horsforth</span>
                     <span class="area-tag">Meanwood</span>
+                    <span class="area-tag">Menston</span>
+                    <span class="area-tag">Moor Allerton</span>
                     <span class="area-tag">Moortown</span>
                     <span class="area-tag">Otley</span>
                     <span class="area-tag">Pool-in-Wharfedale</span>
+                    <span class="area-tag">Rawdon</span>
+                    <span class="area-tag">Shadwell</span>
                     <span class="area-tag">Yeadon</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="contact-form-wrap fade-in">
+<div class="contact-form-wrap fade-in">
   <h3 class="form-title">Request a Free Quote</h3>
-  <p class="form-subtitle">We'll get back to you within 24 hours</p>
+  <p class="form-subtitle">We'll get back to you as soon as possible</p>
   <form
     name="contact"
     method="POST"
@@ -1727,6 +1806,9 @@
         placeholder="Describe what you're looking for, the size of your garden, or anything else that would help us give you an accurate quote..."
       ></textarea>
     </div>
+    <p class="form-photo-note" style="padding-bottom: 1rem;">
+      📷 Got photos of your garden? Email them to <a href="mailto:northleedsgardenservices@outlook.com">northleedsgardenservices@outlook.com</a> and we'll factor them into your quote.
+    </p>
     <button type="submit" class="form-submit">
       Send My Free Quote Request →
     </button>
@@ -1735,6 +1817,7 @@
     </p>
   </form>
 </div>
+          
         </div>
       </div>
     </section>
