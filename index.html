@@ -356,25 +356,11 @@
       .hero-content {
         position: relative;
         z-index: 2;
-        padding: 140px 0 80px;
-      }
-      .hero-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(140, 191, 63, 0.4);
-        border-radius: 100px;
-        padding: 6px 16px 6px 8px;
-        margin-bottom: 28px;
-        backdrop-filter: blur(4px);
-      }
-      .hero-badge-dot {
-        width: 8px;
-        height: 8px;
-        background: var(--lime);
-        border-radius: 50%;
-        animation: pulse 2s infinite;
+        padding: 180px 0 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
       }
       @keyframes pulse {
         0%,
@@ -455,9 +441,8 @@
         font-size: 1rem;
       }
       .hero-stats {
-        display: flex;
-        gap: 40px;
-        padding-top: 40px;
+        margin-top: auto;
+        padding-top: 24px;
         border-top: 1px solid rgba(255, 255, 255, 0.15);
       }
       .hero-stat-num {
@@ -1149,6 +1134,7 @@
           grid-row: auto;
         }
         .hero-content {
+          padding: 80px 0 40px;
           text-align: center;
         }
         .hero-actions {
@@ -1219,10 +1205,6 @@
     <section id="hero">
       <div class="hero-bg"></div>
       <div class="container hero-content">
-        <div class="hero-badge">
-          <div class="hero-badge-dot"></div>
-          <span>Serving North Leeds</span>
-        </div>
         <div class="hero-title-row">
           <img
             src="north-leeds-garden-services-logo.png"
